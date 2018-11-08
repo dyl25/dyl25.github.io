@@ -1,0 +1,290 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: black;
+    line-height: 1.8;
+}
+
+.right {
+    float: right;
+}
+
+.l-opacity {
+    opacity: 0.85;
+}
+
+.container {
+    padding: 60px 60px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+/* Navigation */
+
+.header-nav {
+    padding: 34px 87px;
+    background-color: rgb(40, 97, 202);
+    /*clear float*/
+    overflow: hidden;
+}
+
+.header-logo {
+    float: left;
+    color: #FFF;
+}
+
+.header-nav nav {
+    display: inline-block;
+    margin-right: 100px;
+}
+
+.header-nav nav a {
+    padding: 0 50px;
+}
+
+.header-nav nav a:hover {
+    text-decoration: underline;
+}
+
+.social {
+    float: right;
+}
+
+.social a {
+    padding: 0 10px;
+}
+
+.social a:hover img {
+    transform: scale(1.2);
+}
+
+/* End Navigation */
+
+/* Presentation */
+#about {
+    /*clear float*/
+    overflow: hidden;
+    height: 400px;
+    color: #FFF;
+}
+
+.mosaic-img {
+    height: 100%;
+    float: left;
+    width: 50%;
+    background: no-repeat center center / cover url('img/office.jpg');
+}
+
+.mosaic-content {
+    height: 100%;
+    float: right;
+    width: 50%;
+    background-color: #FF664C;
+    text-align: center;
+    padding: 100px 0;;
+}
+
+blockquote {
+    position: relative;
+    font-style: italic;
+}
+
+blockquote::before {
+    position: absolute;
+    content: '“';
+    top: -30px;
+    left: -5px;
+    font-size: 30px;
+}
+
+blockquote::after {
+    position: absolute;
+    content: '„';
+    font-size: 30px;
+}
+/* End Presentation */
+
+/* Competences */
+#skills {
+    background-color: #f1f1f1;
+    min-height: 500px;
+    text-align: center;
+}
+
+.card {
+    display: inline-block;
+    vertical-align: top;
+    width: 15%;
+    background-color: #fff;
+    margin: 0 20px;
+    padding: 15px;
+    height: 300px;
+    transition: transform .3s;
+}
+
+.card:hover {
+    transform: scale(1.2);
+}
+
+.card .card-body {
+    text-align: center;
+}
+
+.card-body ul {
+    margin: 0;
+    padding: 0;
+}
+
+.card-body li {
+    list-style-type: none;
+    font-size: 15px;
+    color: rgb(155, 152, 152);
+}
+/* End Compétences */
+
+/* Contact */
+#contact {
+    background-color: #FF664C;
+    height: 250px;
+}
+
+#contact p {
+    font-size: 20px;
+    color: #fff;
+}
+/* End Contact */
+
+.disapear {
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+
+/* Footer */
+
+#footer {
+    background-color: rgb(40, 97, 202);
+    color: white;
+    padding: 30px 30px;
+}
+
+#footer > div {
+    margin: auto;
+    width: 30%;
+}
+
+.card-footer {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 30px;
+}
+
+.card-footer p {
+    opacity: 0.85;
+}
+
+.card-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.card-footer a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 12px;
+    text-align: center;
+}
+
+/*End Footer*/
+
+@media only screen and (max-width: 1440px) {
+
+    .header-nav {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        
+    }
+
+    .header-logo, .header-nav .right,  .header-nav .social{
+        float: none;
+        text-align: center;
+    }
+
+    .header-logo, .header-nav .right > nav  {
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+
+    #footer > div {
+        width: 50%;
+    }
+
+}
+
+@media only screen and (max-width: 1140px) {
+
+    .card {
+        float: none;
+        display: block;
+        width: 50%;
+        margin: 10px auto;
+    }
+
+    .card:hover {
+        transform: scale(.96);
+    }
+
+    .header-nav nav {
+        margin-right: 0;
+    }
+
+}
+
+@media only screen and (max-width: 990px) {
+
+    .header-nav nav a {
+        padding: 0 20px;
+    }
+
+    #about {
+        height: auto;
+        min-height: 400px;
+    }
+
+    .mosaic-img {
+        height: 400px;
+    }
+
+    .mosaic-img, .mosaic-content {
+        float: none;
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 740px) {
+
+    .card {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 440px) {
+
+    .container {
+        padding: 30px 30px;
+    }
+
+}
