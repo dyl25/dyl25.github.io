@@ -37,9 +37,12 @@ a {
 }
 
 .header-logo {
+    width: 401px;
+    height: 68px;
     float: left;
     color: #FFF;
     margin-left: 80px;
+    background: no-repeat center center / cover url('./img/logoDylWeb.png');
 }
 
 .header-nav nav {
@@ -285,6 +288,21 @@ blockquote::after {
         width: 100%;
     }
 
+    .header-logo {
+        margin-left: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 549px) {
+
+    .header-logo {
+        width: 256px;
+        height: 88px;
+        background: no-repeat center center / cover url('./img/logoDylWebMobile.png');
+    }
+
+
 }
 
 @media only screen and (max-width: 440px) {
@@ -292,5 +310,6 @@ blockquote::after {
     .container {
         padding: 30px 30px;
     }
+
 
 }
