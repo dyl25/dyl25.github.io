@@ -21,6 +21,7 @@ body {
 
 .container {
     padding: 60px 60px;
+    min-height: 350px;
 }
 
 a {
@@ -80,9 +81,9 @@ a {
 /* End Navigation */
 
 /* Presentation */
-#about {
+/*#about {*/
     /*clear float*/
-    overflow: hidden;
+    /*overflow: hidden;
     height: 400px;
     color: #FFF;
 }
@@ -100,7 +101,33 @@ a {
     width: 50%;
     background-color: #FF664C;
     text-align: center;
-    padding: 100px 0;;
+    padding: 100px 0;
+}*/
+
+#presentation {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    color: #FFF;
+    background:  -webkit-gradient(
+                     linear, 
+                     left top, left bottom, 
+                     from(rgba(20,20,20, .7)), 
+                     to(rgba(20,20,20, .7))),
+                     url('img/Slice.jpg') no-repeat center center / cover;
+    background:  -webkit-linear-gradient(
+                     rgba(20,20,20, .7), 
+                     rgba(20,20,20, .7)),
+                     url('img/Slice.jpg') no-repeat center center / cover;
+    background:  -o-linear-gradient(
+                     rgba(20,20,20, .7), 
+                     rgba(20,20,20, .7)),
+                     url('img/Slice.jpg') no-repeat center center / cover;
+    background:  linear-gradient(
+                     rgba(20,20,20, .7), 
+                     rgba(20,20,20, .7)),
+                     url('img/Slice.jpg') no-repeat center center / cover;
 }
 
 blockquote {
@@ -111,8 +138,8 @@ blockquote {
 blockquote::before {
     position: absolute;
     content: '“';
-    top: -30px;
-    left: -5px;
+    top: -20px;
+    left: 7px;
     font-size: 30px;
 }
 
@@ -171,8 +198,26 @@ blockquote::after {
 
 /* Contact */
 #contact {
-    background-color: #FF664C;
-    min-height: 250px;
+    /*background-color: #FF664C;*/
+    padding: 100px 100px;
+    background:  -webkit-gradient(
+                     linear, 
+                     left top, left bottom, 
+                     from(rgba(20,20,20, .5)), 
+                     to(rgba(20,20,20, .5))),
+                     url('./img/bg-portfolio.jpg') no-repeat center center / cover;
+    background:  -webkit-linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)),
+                     url('./img/bg-portfolio.jpg') no-repeat center center / cover;
+    background:  -o-linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)),
+                     url('./img/bg-portfolio.jpg') no-repeat center center / cover;
+    background:  linear-gradient(
+                     rgba(20,20,20, .5), 
+                     rgba(20,20,20, .5)),
+                     url('./img/bg-portfolio.jpg') no-repeat center center / cover;
 }
 
 #contact p {
@@ -230,9 +275,9 @@ blockquote::after {
 @media only screen and (max-width: 1440px) {
 
     .header-nav {
+        width: 100%;
         padding-top: 15px;
         padding-bottom: 15px;
-        
     }
 
     .header-logo, .header-nav .right,  .header-nav .social{
@@ -242,6 +287,10 @@ blockquote::after {
 
     .header-logo, .header-nav .right > nav  {
         margin-bottom: 10px;
+    }
+
+    .header-logo {
+        margin: auto;
     }
 }
 
@@ -314,6 +363,7 @@ blockquote::after {
     .header-logo {
         width: 256px;
         height: 88px;
+        margin: auto;
         background: no-repeat center center / cover url('./img/logoDylWebMobile.png');
     }
 
