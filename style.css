@@ -236,6 +236,7 @@ blockquote::after {
 /* Footer */
 
 #footer {
+    min-height: 0;
     background-color: rgb(40, 97, 202);
     color: white;
     padding: 30px 30px;
