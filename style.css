@@ -50,6 +50,7 @@ a {
 .header-nav nav {
     display: inline-block;
     margin-right: 100px;
+    font-weight: 600;
 }
 
 .header-nav nav a {
