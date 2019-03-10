@@ -109,26 +109,27 @@ a {
     font-size: 20px;
     text-align: center;
     width: 100%;
+    height:100%;
     overflow: hidden;
     color: #FFF;
     background:  -webkit-gradient(
                      linear, 
                      left top, left bottom, 
-                     from(rgba(20,20,20, .7)), 
-                     to(rgba(20,20,20, .7))),
-                     url('img/Slice.jpg') no-repeat center center / cover;
+                     from(rgba(20,20,20, .8)), 
+                     to(rgba(20,20,20, .8))),
+                     url('img/pen-computer.jpg') no-repeat center center / cover;
     background:  -webkit-linear-gradient(
-                     rgba(20,20,20, .7), 
-                     rgba(20,20,20, .7)),
-                     url('img/Slice.jpg') no-repeat center center / cover;
+                     rgba(20,20,20, .8), 
+                     rgba(20,20,20, .8)),
+                     url('img/pen-computer.jpg') no-repeat center center / cover;
     background:  -o-linear-gradient(
-                     rgba(20,20,20, .7), 
-                     rgba(20,20,20, .7)),
-                     url('img/Slice.jpg') no-repeat center center / cover;
+                     rgba(20,20,20, .8), 
+                     rgba(20,20,20, .8)),
+                     url('img/pen-computer.jpg') no-repeat center center / cover;
     background:  linear-gradient(
-                     rgba(20,20,20, .7), 
-                     rgba(20,20,20, .7)),
-                     url('img/Slice.jpg') no-repeat center center / cover;
+                     rgba(20,20,20, .8), 
+                     rgba(20,20,20, .8)),
+                     url('img/pen-computer.jpg') no-repeat center center / cover;
 }
 
 blockquote {
@@ -349,6 +350,18 @@ blockquote::after {
 
 @media only screen and (max-width: 740px) {
 
+    #contact {
+            padding: 50px 50px;
+    }
+
+    .container {
+        padding: 15px 15px;
+    }
+
+    blockquote {
+        margin: 15px 15px;
+    }
+
     .card {
         width: 100%;
     }
@@ -367,14 +380,6 @@ blockquote::after {
         height: 88px;
         margin: auto;
         background: no-repeat center center / cover url('./img/logoDylWebMobile.png');
-    }
-
-}
-
-@media only screen and (max-width: 440px) {
-
-    .container {
-        padding: 30px 30px;
     }
 
 }
