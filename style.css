@@ -15,13 +15,26 @@ body {
     float: right;
 }
 
+.left {
+    float: left;
+}
+
 .l-opacity {
     opacity: 0.85;
+}
+
+.center-block {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container {
     padding: 60px 60px;
     min-height: 350px;
+}
+
+.center-text {
+    text-align: center;
 }
 
 a {
@@ -34,7 +47,6 @@ a {
 .header-nav {
     padding: 34px 87px;
     background-color: rgb(40, 97, 202);
-    /*clear float*/
     overflow: hidden;
 }
 
@@ -82,29 +94,6 @@ a {
 /* End Navigation */
 
 /* Presentation */
-/*#about {*/
-    /*clear float*/
-    /*overflow: hidden;
-    height: 400px;
-    color: #FFF;
-}
-
-.mosaic-img {
-    height: 100%;
-    float: left;
-    width: 50%;
-    background: no-repeat center center / cover url('img/office.jpg');
-}
-
-.mosaic-content {
-    height: 100%;
-    float: right;
-    width: 50%;
-    background-color: #FF664C;
-    text-align: center;
-    padding: 100px 0;
-}*/
-
 #presentation {
     font-size: 20px;
     text-align: center;
@@ -173,13 +162,13 @@ blockquote::after {
     transition: transform .3s;
     transition: transform .3s, -webkit-transform .3s;
     -webkit-box-shadow: 0 5px 5px -5px #333;
-            box-shadow: 0 5px 5px -5px #333;
+    box-shadow: 0 5px 5px -5px #333;
 }
 
-.card:hover {
+.card:hover, .card-horizontal:hover {
     -webkit-transform: scale(1.03);
-        -ms-transform: scale(1.03);
-            transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
 }
 
 .card .card-body {
@@ -197,6 +186,40 @@ blockquote::after {
     color: rgb(155, 152, 152);
 }
 /* End Compétences */
+
+/* Projets */
+
+#projects {
+    min-height: 500px;
+}
+
+#projects .card-horizontal {
+    background-color: #f1f1f1;
+}
+
+.card-horizontal {
+    margin-top: 20px;
+    display: flex;
+    vertical-align: top;
+    width: 60%;
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    -o-transition: transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+    -webkit-box-shadow: 0 5px 5px -5px #333;
+    box-shadow: 0 5px 5px -5px #333;
+}
+
+.card-horizontal a {
+    color: rgb(100, 181, 246);
+}
+
+.card-horizontal .card-body {
+    padding: 40px;
+}
+
+/* End Projets */
 
 /* Contact */
 #contact {
@@ -303,6 +326,10 @@ blockquote::after {
         width: 50%;
     }
 
+    .card-horizontal {
+        width: 90%;
+    }
+
 }
 
 @media only screen and (max-width: 1140px) {
@@ -370,6 +397,16 @@ blockquote::after {
         margin-left: 0px;
     }
 
+}
+
+@media only screen and (max-width: 630px) {
+    .card-horizontal {
+        flex-direction: column;
+    }
+
+    .card-horizontal img{
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width: 549px) {
