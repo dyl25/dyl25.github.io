@@ -17,94 +17,97 @@
     <meta name="author" content="Dylan Vansteenacker">
     <meta name="description"
         content="Portfolio de Dylan Vansteenacker web developer. Présentation de qui je suis ainsi que de mes compétences. Prise de contact.">
-    <title>Portfolio | Dylan Vansteenacker</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Dylan Vansteenacker | Web developer</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="https://kit.fontawesome.com/a4e34a50a6.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 
 <body>
-    <header class="header-nav">
-        <!-- Navigation -->
-        <div class="header-logo">
-            <!--Dylan Vansteenacker - <span class="l-opacity">Web developer</span>-->
-            <!--<img src="./img/logoDylWeb.png" alt="">-->
-        </div>
-        <div class="right">
-            <nav>
-                <a href="#about">Présentation</a>
-                <a href="#skills">Compétences</a>
-                <a href="#projects">Projets</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            <div class="social">
-                <a href="https://github.com/dyl25" target="blank"><img src="./img/github-32.png"
-                        alt="Logo of Github"></a>
-                <a href="https://www.linkedin.com/in/dylan-vansteenacker-137795158/" target="blank"><img
-                        src="./img/in-32.png" alt="Logo of Linkedin"></a>
+    <header class="navbar-fixed">
+        <nav class="black">
+            <div class="nav-wrapper">
+                <a href="#!" class="brand-logo p-10 center-align"><img src="./img/logoDylWeb.png" alt=""></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#about">Présentation</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
-        </div>
+        </nav>
     </header>
 
     <!-- Présentation -->
 
     <section id="presentation" class="container">
-        <h2>Présentation</h2>
-        <blockquote>
-            Je suis un jeune webdeveloper passionné par ce qu'il fait. J’adore découvrir de nouvelles technologies.
-            Je suis orienté backend et frontend avec des langages tels que PHP et Javascript, l'apprentissage de
-            nouvelles technologies ou langages ne m'effraie pas.
-        </blockquote>
+        <div class="row">
+            <h2 class="light-blue-text text-accent-3 center-align">Présentation</h2>
+            <blockquote class="bl-5p-blue">
+                Je suis un jeune webdeveloper passionné par ce qu'il fait. J’adore découvrir de nouvelles technologies.
+                Je suis orienté backend et frontend avec des langages tels que PHP et Javascript, l'apprentissage de
+                nouvelles technologies ou langages ne m'effraie pas.
+            </blockquote>
+        </div>
     </section>
 
     <!-- Compétences -->
-    <section id="skills" class="container">
+    <section id="skills" class="row">
 
-        <h2>Compétences</h2>
+        <h2 class="deep-purple-text text-accent-3 center-align p-10">Technologies</h2>
 
-        <div class="card">
-            <img src="img/php-logo.png" alt="Logo of PHP">
-            <div class="card-body">
-                <ul>
-                    <li>PHP 7</li>
-                    <li>Laravel 6</li>
+        <div class="col m2 offset-m1 s12 mb-35p">
+            <p class="deep-purple-text text-accent-3 center-align"><i class="fab fa-php fa-5x"></i></p>
+            <div class="center-align">
+                <ul class="white-text bl-5p">
+                    <li>PHP</li>
+                    <li>Laravel</li>
                     <li>Slim</li>
-                    <li>Codeigniter 3</li>
+                    <li>Codeigniter</li>
                     <li>Symfony</li>
+                    <li>Wordpress</li>
                 </ul>
             </div>
         </div>
-        <div class="card">
-            <img src="img/js-logo.png" alt="Logo of Javascript">
-            <div class="card-body">
-                <ul>
-                    <li>ES 6</li>
+        <div class="col m2 s12 mb-35p">
+            <p class="deep-purple-text text-accent-3 center-align"><i class="fab fa-node-js fa-5x"></i></p>
+            <div class="center-align">
+                <ul class="white-text bl-5p">
+                    <li>ES6</li>
                     <li>JQuery</li>
-                    <li>Angular 7</li>
+                    <li>Angular</li>
                     <li>Vuejs</li>
                 </ul>
             </div>
         </div>
-        <div class="card">
-            <img src="img/html-logo.png" alt="Logo of HTML">
-            <div class="card-body">
-                <ul>
-                    <li>HTML 5</li>
+        <div class="col m2 s12 mb-35p">
+            <p class="deep-purple-text text-accent-3 center-align"><i class="fab fa-html5 fa-5x"></i></p>
+            <div class="center-align col s12">
+                <ul class="white-text bl-5p">
+                    <li>HTML</li>
                 </ul>
             </div>
         </div>
-        <div class="card">
-            <img src="img/css-logo.png" alt="Logo of CSS">
-            <div class="card-body">
-                <ul>
-                    <li>CSS 3</li>
-                    <li>Bootstrap 4</li>
+        <div class="col m2 s12 mb-35p">
+            <p class="deep-purple-text text-accent-3 center-align"><i class="fab fa-css3 fa-5x"></i></p>
+            <div class="center-align col s12">
+                <ul class="white-text bl-5p">
+                    <li>CSS</li>
+                    <li>Bootstrap</li>
                     <li>MaterializeCss</li>
                 </ul>
             </div>
         </div>
-        <div class="card">
-            <img src="img/tools.png" alt="Logo of tools">
-            <div class="card-body">
-                <ul>
+        <div class="col m2 s12 mb-35p">
+            <p class="deep-purple-text text-accent-3 center-align"><i class="fas fa-tools fa-5x"></i></p>
+            <div class="center-align">
+                <ul class="white-text bl-5p">
                     <li>Mysql</li>
                     <li>SqlServer</li>
                     <li>Git</li>
@@ -118,80 +121,102 @@
     </section>
 
     <!-- Compétences -->
-    <section id="projects" class="container">
+    <section id="projects" class="row container">
 
-        <h2 class="center-text">Projets</h2>
+        <h2 class="center-align deep-orange-text text-accent-3 p-20">Projets</h2>
 
-        <div class="card-horizontal center-block">
-            <div>
-                <a href="https://bullecoaching.be/">
-                    <img src="img/BulleCoachingThumb.jpg" alt="Thumbnail image of Brussels Bulle Coaching website">
+        <div class="row">
+            <div class="col m6 s12">
+                <h3 class="hide-on-med-and-up"><a href="https://bullecoaching.be/"
+                        class="deep-orange-text text-accent-4">Bulle Coaching</a></h3>
+                <a class="center-align" href="https://bullecoaching.be/">
+                    <img class="responsive-img" src="img/BulleCoaching-be.jpg"
+                        alt="Thumbnail image of Brussels Bulle Coaching website">
                 </a>
             </div>
-            <div class="card-body">
-                <h3><a href="https://bullecoaching.be/">Bulle Coaching</a></h3>
+            <div class="col m6 s12">
+                <h3 class="hide-on-small-only"><a href="https://bullecoaching.be/"
+                        class="deep-orange-text text-accent-4">Bulle Coaching</a></h3>
                 <p>Site de coaching pour des athlètes mettant à leur disposition des exercices et des programmes
                     d'entraînements.</p>
-                <p><span class="bold-txt">Techno:</span> Laravel, Vuejs</p>
+                <p><span class="underline">Technos:</span> PHP, Laravel, Javascript, Vuejs</p>
             </div>
         </div>
 
-        <div class="card-horizontal center-block">
-            <div>
-                <a href="https://brusselsgrandprix.be/">
-                    <img src="img/BrusselsGrandPrixThumb.jpg" alt="Thumbnail image of Brussels Grand Prix website">
+        <div class="row">
+            <div class="col m6 s12">
+                <h3 class="hide-on-med-and-up"><a href="https://brusselsgrandprix.be/"
+                        class="deep-orange-text text-accent-4">Brussels Grand Prix</a></h3>
+                <a class="center-align" href="https://brusselsgrandprix.be/">
+                    <img class="responsive-img" src="img/bgp-be.jpg"
+                        alt="Thumbnail image of Brussels Grand Prix website">
                 </a>
             </div>
-            <div class="card-body">
-                <h3><a href="https://brusselsgrandprix.be/">Brussels Grand Prix</a></h3>
-                <p>Site de promotion présentant les différentes nouvelles et résultats liés à la compétition du Brussels Grand Prix.</p>
-                <p><span class="bold-txt">Techno:</span> Wordpress</p>
+            <div class="col m6 s12">
+                <h3 class="hide-on-small-only"><a href="https://brusselsgrandprix.be/"
+                        class="deep-orange-text text-accent-4">Brussels Grand Prix</a></h3>
+                <p>Site de promotion présentant les différentes nouvelles et résultats liés à la compétition du Brussels
+                    Grand Prix.</p>
+                <p><span class="underline">Technos:</span> PHP, Wordpress</p>
             </div>
         </div>
 
-        <div class="card-horizontal center-block">
-            <div>
-                <a href="http://atletix.org/">
-                    <img src="img/AtletixThumb.jpg" alt="Thumbnail image of Atletix website">
+        <div class="row">
+            <div class="col m6 s12">
+                <h3 class="hide-on-med-and-up"><a class="deep-orange-text text-accent-4"
+                        href="http://atletix.org/">Atletix</a></h3>
+                <a class="center-align" href="http://atletix.org/">
+                    <img class="responsive-img" src="img/atletix-org.jpg" alt="Thumbnail image of Atletix website">
                 </a>
             </div>
-            <div class="card-body">
-                <h3><a href="http://atletix.org/">Atletix</a></h3>
-                <p>Site d'inscription pour s'inscrire au Brussels Grand Prix.</p>
-                <p><span class="bold-txt">Techno:</span> Laravel, Vuejs</p>
+            <div class="col m6 s12">
+                <h3 class="hide-on-small-only"><a class="deep-orange-text text-accent-4"
+                        href="http://atletix.org/">Atletix</a></h3>
+                <p>Site d'inscription pour s'inscrire à un meeting d'athlétisme international.</p>
+                <p><span class="underline">Technos:</span> Laravel, Vuejs</p>
             </div>
         </div>
 
     </section>
 
     <!-- Contact -->
-    <section id="contact" class="container">
-        <p>Dans un petit groupe ou une grande équipe je sais m'adapter, je suis passionné par ce que je fais et y
-            applique toute mon
-            attention. Contacter moi à l'adresse <strong>dyl.vst01@gmail.com</strong>
-            ou via <strong><a href="https://www.linkedin.com/in/dylan-vansteenacker-137795158/"
-                    target="blank">Linkedin</a></strong>
-            et je me ferai un plaisir de vous répondre aussi tôt que possible.</p>
+    <section id="contact" class="row container">
+        <div class="col s12">
+            <h2 class="center-align deep-orange-text text-accent-3 p-20">Contact</h2>
+            <p>Dans un petit groupe ou une grande équipe je sais m'adapter, je suis passionné par ce que je fais et y
+                applique toute mon
+                attention. Contacter moi à l'adresse <strong>dyl.vst01@gmail.com</strong>
+                ou via <strong><a href="https://www.linkedin.com/in/dylan-vansteenacker-137795158/"
+                        target="blank">Linkedin</a></strong>
+                et je me ferai un plaisir de vous répondre aussi tôt que possible.</p>
+        </div>
     </section>
 
     <!--Footer-->
-    <footer id="footer" class="container">
-        <div>
-            <div class="card-footer">
-                <h4>Contact</h4>
-                <p>dyl.vst01@gmail.com</p>
-            </div>
-            <div class="card-footer">
-                <h4>Social</h4>
-                <p>
-                    <a href="https://github.com/dyl25" target="blank">Github</a>
-                </p>
-                <p>
-                    <a href="https://www.linkedin.com/in/dylan-vansteenacker-137795158/" target="blank">Linkedin</a>
-                </p>
+    <footer class="page-footer black">
+        <div class="container">
+            <div class="row">
+                <div class="col m6 s8 offset-s4">
+                    <h5 class="white-text">Email</h5>
+                    <p class="grey-text text-lighten-4">dyl.vst01@gmail.com</p>
+                </div>
+                <div class="col m4 s8 offset-s4">
+                    <h5 class="white-text">Social</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="https://github.com/dyl25"
+                                target="blank">Github</a></li>
+                        <li><a class="grey-text text-lighten-3"
+                                href="https://www.linkedin.com/in/dylan-vansteenacker-137795158/"
+                                target="blank">Linkedin</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-        <div class="copyright l-opacity">Designed By Me :)</div>
+        <div class="footer-copyright">
+            <div class="container center-align">
+                © 2021 <a href="https://www.linkedin.com/in/dylan-vansteenacker-137795158/">Designed By Me :)</a>
+            </div>
+        </div>
     </footer>
 </body>
 

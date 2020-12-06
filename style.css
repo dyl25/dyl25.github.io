@@ -1,426 +1,90 @@
-*{
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+body {
+    background-color: #212121;
 }
 
-body {
-    margin: 0;
-    font-family: 'Open Sans', sans-serif;
+.row .col {
+    padding: 0 1.2rem;
+}
+
+nav {
+    height: 60px;
+    /*padding: 15px 87px;*/
+    padding-right: 400px;
+}
+
+nav ul, nav ul li, nav ul li a {
+    height: 100%;
+}
+
+nav ul a {
+    font-size: 1.3rem;
+    color: #1de9b6; 
+}
+
+nav .brand-logo {
+    padding: inherit;
+}
+
+h1, h2, h5, h6 {
+    font-family:'Montserrat', sans-serif;;
+}
+
+blockquote, p, li {
     font-size: 16px;
-    color: black;
-    line-height: 1.8;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+#skills div ul {
+    display: inline-block;
+    width: 156px;
+}
+
+#skills div ul li{
+    text-align: left;
+}
+
+/* Utilities */
+
+.pr-400 {
+    padding-right: 400px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.skills-title {
+    font-style: italic;
+}
+
+.bl-5p {
+    border-left: 5px solid #651fff;
+    padding-left: 2.5rem !important;
+}
+
+.bl-5p-blue {
+    border-left: 5px solid #00b0ff;
+}
+
+.mb-35p {
+    margin-bottom: 35px;
+}
+
+.mb-60p {
+    margin-bottom: 60px;
 }
 
 .bold-txt {
     font-weight: bold;
 }
 
-.right {
-    float: right;
-}
-
-.left {
-    float: left;
-}
-
-.l-opacity {
-    opacity: 0.85;
-}
-
-.center-block {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.container {
-    padding: 60px 60px;
-    min-height: 350px;
-}
-
-.center-text {
-    text-align: center;
-}
-
-a {
-    text-decoration: none;
-    color: #FFF;
-}
-
-/* Navigation */
-
-.header-nav {
-    padding: 34px 87px;
-    background-color: rgb(40, 97, 202);
-    overflow: hidden;
-}
-
-.header-logo {
-    width: 401px;
-    height: 68px;
-    float: left;
-    color: #FFF;
-    margin-left: 80px;
-    background: no-repeat center center / cover url('./img/logoDylWeb.png');
-}
-
-.header-nav nav {
-    display: inline-block;
-    margin-right: 100px;
-    font-weight: 600;
-}
-
-.header-nav nav a {
-    padding: 0 50px;
-}
-
-.header-nav nav a:hover {
+.underline {
     text-decoration: underline;
 }
 
-.header-nav .right {
-    padding-top: 20px;
-}
-
-.social {
-    float: right;
-}
-
-.social a {
-    padding: 0 10px;
-}
-
-.social a:hover img {
-    -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2);
-}
-
-/* End Navigation */
-
-/* Presentation */
-#presentation {
-    font-size: 20px;
-    text-align: center;
-    width: 100%;
-    height:100%;
-    overflow: hidden;
-    color: #FFF;
-    background:  -webkit-gradient(
-                     linear, 
-                     left top, left bottom, 
-                     from(rgba(20,20,20, .8)), 
-                     to(rgba(20,20,20, .8))),
-                     url('img/pen-computer.jpg') no-repeat center center / cover;
-    background:  -webkit-linear-gradient(
-                     rgba(20,20,20, .8), 
-                     rgba(20,20,20, .8)),
-                     url('img/pen-computer.jpg') no-repeat center center / cover;
-    background:  -o-linear-gradient(
-                     rgba(20,20,20, .8), 
-                     rgba(20,20,20, .8)),
-                     url('img/pen-computer.jpg') no-repeat center center / cover;
-    background:  linear-gradient(
-                     rgba(20,20,20, .8), 
-                     rgba(20,20,20, .8)),
-                     url('img/pen-computer.jpg') no-repeat center center / cover;
-}
-
-blockquote {
-    position: relative;
-    font-style: italic;
-}
-
-blockquote::before {
-    position: absolute;
-    content: '“';
-    top: -20px;
-    left: 7px;
-    font-size: 30px;
-}
-
-blockquote::after {
-    position: absolute;
-    content: '„';
-    font-size: 30px;
-}
-/* End Presentation */
-
-/* Competences */
-#skills {
-    background-color: #f1f1f1;
-    min-height: 500px;
-    text-align: center;
-}
-
-.card {
-    display: inline-block;
-    vertical-align: top;
-    width: 15%;
-    background-color: #fff;
-    margin: 0 20px;
-    padding: 15px;
-    height: 330px;
-    -webkit-transition: -webkit-transform .3s;
-    transition: -webkit-transform .3s;
-    -o-transition: transform .3s;
-    transition: transform .3s;
-    transition: transform .3s, -webkit-transform .3s;
-    -webkit-box-shadow: 0 5px 5px -5px #333;
-    box-shadow: 0 5px 5px -5px #333;
-}
-
-.card:hover, .card-horizontal:hover {
-    -webkit-transform: scale(1.03);
-    -ms-transform: scale(1.03);
-    transform: scale(1.03);
-}
-
-.card .card-body {
-    text-align: center;
-}
-
-.card-body ul {
-    margin: 0;
-    padding: 0;
-}
-
-.card-body li {
-    list-style-type: none;
-    font-size: 15px;
-    color: rgb(155, 152, 152);
-}
-/* End Compétences */
-
-/* Projets */
-
-#projects {
-    min-height: 500px;
-}
-
-#projects .card-horizontal {
-    background-color: #f1f1f1;
-}
-
-.card-horizontal {
-    margin-top: 20px;
-    display: flex;
-    vertical-align: top;
-    width: 60%;
-    -webkit-transition: -webkit-transform .3s;
-    transition: -webkit-transform .3s;
-    -o-transition: transform .3s;
-    transition: transform .3s;
-    transition: transform .3s, -webkit-transform .3s;
-    -webkit-box-shadow: 0 5px 5px -5px #333;
-    box-shadow: 0 5px 5px -5px #333;
-}
-
-.card-horizontal a {
-    color: rgb(100, 181, 246);
-}
-
-.card-horizontal .card-body {
-    padding: 40px;
-}
-
-/* End Projets */
-
-/* Contact */
-#contact {
-    /*background-color: #FF664C;*/
-    padding: 100px 100px;
-    background:  -webkit-gradient(
-                     linear, 
-                     left top, left bottom, 
-                     from(rgba(20,20,20, .5)), 
-                     to(rgba(20,20,20, .5))),
-                     url('./img/bg-portfolio.jpg') no-repeat center center / cover;
-    background:  -webkit-linear-gradient(
-                     rgba(20,20,20, .5), 
-                     rgba(20,20,20, .5)),
-                     url('./img/bg-portfolio.jpg') no-repeat center center / cover;
-    background:  -o-linear-gradient(
-                     rgba(20,20,20, .5), 
-                     rgba(20,20,20, .5)),
-                     url('./img/bg-portfolio.jpg') no-repeat center center / cover;
-    background:  linear-gradient(
-                     rgba(20,20,20, .5), 
-                     rgba(20,20,20, .5)),
-                     url('./img/bg-portfolio.jpg') no-repeat center center / cover;
-}
-
-#contact p {
-    font-size: 20px;
-    color: #fff;
-}
-/* End Contact */
-
-.disapear {
-    -webkit-transition: opacity 0.5s;
-    -o-transition: opacity 0.5s;
-    transition: opacity 0.5s;
-    opacity: 0;
-}
-
-/* Footer */
-
-#footer {
-    min-height: 0;
-    background-color: rgb(40, 97, 202);
-    color: white;
-    padding: 30px 30px;
-}
-
-#footer > div {
-    margin: auto;
-    width: 30%;
-}
-
-.card-footer {
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 30px;
-}
-
-.card-footer p {
-    opacity: 0.85;
-}
-
-.card-footer a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.card-footer a:hover {
-    text-decoration: underline;
-}
-
-.copyright {
-    font-size: 12px;
-    text-align: center;
-}
-
-/*End Footer*/
-
-@media only screen and (max-width: 1440px) {
-
-    .header-nav {
-        width: 100%;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-
-    .header-logo, .header-nav .right,  .header-nav .social{
-        float: none;
-        text-align: center;
-    }
-
-    .header-logo, .header-nav .right > nav  {
-        margin-bottom: 10px;
-    }
-
-    .header-logo {
-        margin: auto;
-    }
-}
-
-@media only screen and (max-width: 1240px) {
-
-    #footer > div {
-        width: 50%;
-    }
-
-    .card-horizontal {
-        width: 90%;
-    }
-
-}
-
-@media only screen and (max-width: 1140px) {
-
-    .card {
-        float: none;
-        display: block;
-        width: 50%;
-        margin: 10px auto;
-    }
-
-    .card:hover {
-        -webkit-transform: scale(.96);
-            -ms-transform: scale(.96);
-                transform: scale(.96);
-    }
-
-    .header-nav nav {
-        margin-right: 0;
-    }
-
-}
-
-@media only screen and (max-width: 990px) {
-
-    .header-nav nav a {
-        padding: 0 20px;
-    }
-
-    #about {
-        height: auto;
-        min-height: 400px;
-    }
-
-    .mosaic-img {
-        height: 400px;
-    }
-
-    .mosaic-img, .mosaic-content {
-        float: none;
-        width: 100%;
-    }
-
-}
-
-@media only screen and (max-width: 740px) {
-
-    #contact {
-            padding: 50px 50px;
-    }
-
-    .container {
-        padding: 15px 15px;
-    }
-
-    blockquote {
-        margin: 15px 15px;
-    }
-
-    .card {
-        width: 100%;
-    }
-
-    .header-logo {
-        margin-left: 0px;
-    }
-
-}
-
-@media only screen and (max-width: 630px) {
-    .card-horizontal {
-        flex-direction: column;
-    }
-
-    .card-horizontal img{
-        width: 90%;
-    }
-}
-
-@media only screen and (max-width: 549px) {
-
-    /* Change logo for mobile */
-    .header-logo {
-        width: 256px;
-        height: 88px;
-        margin: auto;
-        background: no-repeat center center / cover url('./img/logoDylWebMobile.png');
-    }
-
-}
+/* End utilities */
