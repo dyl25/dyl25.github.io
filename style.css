@@ -19,14 +19,42 @@ nav ul, nav ul li, nav ul li a {
 nav ul a {
     font-size: 1.3rem;
     color: #1de9b6; 
+    position: relative;
+}
+
+nav ul a:after {    
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  -o-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+nav ul a:hover:after { 
+  width: 100%; 
+  left: 0; 
 }
 
 nav .brand-logo {
     padding: inherit;
 }
 
-h1, h2, h5, h6 {
-    font-family:'Montserrat', sans-serif;;
+h1, h2 {
+    font-family:'Montserrat', sans-serif; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}
+
+h3 {
+margin-top: 0;
 }
 
 blockquote, p, li {
@@ -45,6 +73,21 @@ blockquote, p, li {
 }
 
 /* Utilities */
+
+.img-scale {
+    display: inline-block;
+    -webkit-transition: -webkit-transform .3s;
+    transition: -webkit-transform .3s;
+    -o-transition: transform .3s;
+    transition: transform .3s;
+    transition: transform .3s, -webkit-transform .3s;
+}
+
+.img-scale:hover {
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
+    transform: scale(1.03);
+}
 
 .pr-400 {
     padding-right: 400px;
