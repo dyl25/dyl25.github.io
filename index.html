@@ -27,6 +27,8 @@
 
     <script src="https://kit.fontawesome.com/a4e34a50a6.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/initialization.js"></script>
+
 </head>
 
 <body>
@@ -34,6 +36,8 @@
         <nav class="black">
             <div class="nav-wrapper">
                 <a href="#!" class="brand-logo p-10 center-align"><img src="./img/logoDylWebExport.png" alt=""></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger right-align"><i
+                        class="fas fa-bars grey-text text-lighten-3"></i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="#about">Présentation</a></li>
                     <li><a href="#skills">Compétences</a></li>
@@ -43,6 +47,12 @@
             </div>
         </nav>
     </header>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="#about" class="sidenav-close">Présentation</a></li>
+        <li><a href="#skills" class="sidenav-close">Compétences</a></li>
+        <li><a href="#projects" class="sidenav-close">Projets</a></li>
+        <li><a href="#contact" class="sidenav-close">Contact</a></li>
+    </ul>
 
     <!-- Présentation -->
 
@@ -62,7 +72,7 @@
 
         <h2 class="deep-purple-text text-accent-3 center-align p-10">Technologies</h2>
 
-        <div class="col m2 offset-m1 s12 mb-35p">
+        <div class="col l2 offset-l1 s12 mb-35p">
             <p class="deep-purple-text text-accent-3 center-align"><i class="fab fa-php fa-5x"></i></p>
             <div class="center-align">
                 <ul class="white-text bl-5p">
@@ -75,7 +85,7 @@
                 </ul>
             </div>
         </div>
-        <div class="col m2 s12 mb-35p">
+        <div class="col l2 s12 mb-35p">
             <p class="deep-purple-text text-accent-3 center-align"><i class="fab fa-node-js fa-5x"></i></p>
             <div class="center-align">
                 <ul class="white-text bl-5p">
@@ -86,7 +96,7 @@
                 </ul>
             </div>
         </div>
-        <div class="col m2 s12 mb-35p">
+        <div class="col l2 s12 mb-35p">
             <p class="deep-purple-text text-accent-3 center-align"><i class="fab fa-html5 fa-5x"></i></p>
             <div class="center-align col s12">
                 <ul class="white-text bl-5p">
@@ -94,7 +104,7 @@
                 </ul>
             </div>
         </div>
-        <div class="col m2 s12 mb-35p">
+        <div class="col l2 s12 mb-35p">
             <p class="deep-purple-text text-accent-3 center-align"><i class="fab fa-css3 fa-5x"></i></p>
             <div class="center-align col s12">
                 <ul class="white-text bl-5p">
@@ -104,7 +114,7 @@
                 </ul>
             </div>
         </div>
-        <div class="col m2 s12 mb-35p">
+        <div class="col l2 s12 mb-35p">
             <p class="deep-purple-text text-accent-3 center-align"><i class="fas fa-tools fa-5x"></i></p>
             <div class="center-align">
                 <ul class="white-text bl-5p">
@@ -166,13 +176,14 @@
                 <h3 class="hide-on-med-and-up"><a class="deep-orange-text text-accent-4 underline-active"
                         href="http://atletix.org/">Atletix</a></h3>
                 <a class="center-align" href="http://atletix.org/">
-                    <img class="responsive-img img-scale" src="img/atletix-org.jpg" alt="Thumbnail image of Atletix website">
+                    <img class="responsive-img img-scale" src="img/atletix-org.jpg"
+                        alt="Thumbnail image of Atletix website">
                 </a>
             </div>
             <div class="col m6 s12">
                 <h3 class="hide-on-small-only"><a class="deep-orange-text text-accent-4 underline-active"
                         href="http://atletix.org/">Atletix</a></h3>
-                <p>Site d'inscription pour s'inscrire à un meeting d'athlétisme international.</p>
+                <p>Site d'inscription pour un meeting d'athlétisme international.</p>
                 <p><span class="underline">Technos:</span> PHP, Laravel, Javascript, Vuejs</p>
             </div>
         </div>
@@ -198,16 +209,16 @@
             <div class="row">
                 <div class="col m6 s8 offset-s4">
                     <h2 class="white-text footer-title">Email</h2>
-                    <p class="grey-text text-lighten-4">dyl.vst01@gmail.com</p>
+                    <p class="grey-text text-lighten-4"><i class="far fa-envelope mr-15p"></i> dyl.vst01@gmail.com</p>
                 </div>
                 <div class="col m4 s8 offset-s4">
                     <h2 class="white-text footer-title">Social</h2>
                     <ul>
                         <li><a class="grey-text text-lighten-3 underline-active" href="https://github.com/dyl25"
-                                target="blank">Github</a></li>
+                                target="blank"><i class="fab fa-github mr-15p"></i> Github</a></li>
                         <li><a class="grey-text text-lighten-3 underline-active"
                                 href="https://www.linkedin.com/in/dylan-vansteenacker-137795158/"
-                                target="blank">Linkedin</a></li>
+                                target="blank"><i class="fab fa-linkedin-in mr-15p"></i> Linkedin</a></li>
                     </ul>
                 </div>
             </div>
