@@ -2,6 +2,10 @@ body {
     background-color: #212121;
 }
 
+strong {
+    font-weight: 700;
+}
+
 .row .col {
     padding: 0 1.2rem;
 }
@@ -108,6 +112,12 @@ blockquote, p, li {
     text-align: left;
 }
 
+@media only screen and (min-width : 993px) {
+    .row .col.offset-l1 {
+        margin-left: 11.333%;
+    }
+}
+
 /* Utilities */
 
 .img-scale {
@@ -135,6 +145,10 @@ blockquote, p, li {
 
 .p-20 {
     padding: 20px;
+}
+
+.pl-100p {
+    padding-left: 100px;
 }
 
 .skills-title {
