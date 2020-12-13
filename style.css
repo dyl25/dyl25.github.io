@@ -9,7 +9,13 @@ body {
 nav {
     height: 60px;
     /*padding: 15px 87px;*/
-    padding-right: 400px;
+    padding-right: 240px;
+}
+
+@media only screen and (max-width : 1281px) {
+    nav {
+        padding-right: 149px;
+    }
 }
 
 nav ul, nav ul li, nav ul li a {
@@ -18,7 +24,7 @@ nav ul, nav ul li, nav ul li a {
 
 nav ul a {
     font-size: 1.3rem;
-    color: #1de9b6; 
+    color: #dedede;
     position: relative;
 }
 
@@ -45,8 +51,17 @@ nav .brand-logo {
     padding: inherit;
 }
 
+nav .brand-logo img {
+
+    width: 90%;
+}
+
 h1, h2 {
     font-family:'Montserrat', sans-serif; 
+}
+
+h2 {
+    font-size: 30px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -54,13 +69,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h3 {
-margin-top: 0;
+    margin-top: 0;
+    font-size: 20px;
+}
+
+.footer-title {
+    font-size: 20px;
 }
 
 blockquote, p, li {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
-    color: white;
+    color: #dedede;
 }
 
 #skills div ul {
@@ -127,6 +147,10 @@ blockquote, p, li {
 }
 
 .underline {
+    text-decoration: underline;
+}
+
+.underline-active:hover {
     text-decoration: underline;
 }
 
